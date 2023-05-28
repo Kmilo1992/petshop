@@ -67,7 +67,7 @@
     width: 100%;
     min-width: 320px;
     height: 60vh;
-    background-image: url('/img/hero.png');
+    background-image: url('./img/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
