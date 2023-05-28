@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    display:flex;
+}
+
+.header .black__container {
+    display: flex;
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 25px;
+}
+
+.black__container .nav__list {
+    gap: 1em;
+    display: flex;
+}
+
+.header .black__left{
+    padding-left: 4em;
+}
+
+.header .black__right{
+    padding-right: 4em;
+}
+
+.nav__bar {
+    background-color: #F0A83E;
+    height: 62px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    flex-flow: row wrap;
+}
+
+.nav__bar .nav__list {
+    gap: 1em;
+    display: flex;
+}
+
+.nav__bar .nav__list a {
+    color: white;
+}
+
+.nav__bar .nav__list img {
+    padding-right: 3px;
+}
+
+/* Estilos Main */
+
+.hero {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('/img/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 5em;
+}
+
+.hero .cont__right {
+    display: block;
+}
+
+.hero .cont__right h2 {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 300;
+}
+
+.hero .cont__right p {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hero .cont__right a {
+    color: white;
+    background-color: #F0A83E;
+    padding: 10px;
+}
+
+.productos {
+    display: block;
+}
+
+.productos .cont__productos {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.productos .cont__productos img {
+    text-align: center;
+    width: 60px;
+}
+
+.productos .cont__productos h1{
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.productos .cont__productos .nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    margin: 15px auto;
+    width: 50%;
+    max-width: 340px;
+    color: #666666;
+}
+
+.productos .cont__productos .nav__list a {
+    color: #666666;
+    font-size: 15px;
+}
+
+.productos .articulos {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    gap: 20px;
+    width: 80%;
+    align-items: center;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+.productos .articulos .items {
+    background-color: #FBFAF6;
+    padding-bottom: 10px;
+}
+
+.productos .articulos .items .nombre__item {
+    color: #3C2313;
+    font-size: 15px;
+}
+
+.productos .articulos .items .precio__item {
+    color: #F0A83E;
+    font-size: 15px;
+}
+
+/* Estilos Footer */
+
+.footer .subscribe {
+    width: 100%;
+    background-color: #F0A83E;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.footer .subscribe .left {
+    width: 55%;
+    padding: 10px 0;
+    min-width: 394px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.5em;
+}
+
+.footer .subscribe .right {
+    min-width: 400px;
+    width: 40%;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+}
+
+.footer .subscribe .right .form {
+    min-width: 410px;
+}
+
+.footer .subscribe .right input {
+    padding: 15px;
+    width: 20em;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.footer .subscribe .right a {
+    background-color: #3C2313;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.footer .redes {
+    height: 290px;
+    background-color: #3C2313;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    justify-content: center;
+}
+
+.footer .redes .contactos {
+    text-align: left;
+    width: 70%;
+}
+
+.footer .redes .contactos__box {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .redes .contactos__box p {
+    color: #8A8787;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.footer .black__container {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+}
+
+.footer .black__container p {
+    margin: auto;
+}
