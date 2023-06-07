@@ -16,10 +16,12 @@
                 <h3>Grandes ofertas en comederos</h3>
             </div>
             <div class="black__right">
-                <ul class="nav__list">
-                    <li>Español ▾</li>
-                    <li>ARG$ ▾</li>
-                </ul>
+                <select name="Language">
+                    <option value="spanish">Español</option>
+                </select>
+                <select name="currency">
+                    <option value="arg">ARG$</option>
+                </select>
             </div>
             
             
@@ -28,23 +30,23 @@
             <h1 class="titulo"><img src="./img/logo-header.png" alt=""></h1>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li><a href="#"><img src="./img/pawprint.png" alt="">Categorias</a></li>
-                    <li><a href="#"><img src="./img/pawprint.png" alt="">Pets</a></li>
+                    <li><a href="#categorias"><img src="./img/pawprint.png" alt="">Categorias</a></li>
+                    <li><a href="#productos"><img src="./img/pawprint.png" alt="">Pets</a></li>
                     <li><a href="#"><img src="./img/pawprint.png" alt="">Nosotros</a></li>
-                    <li><a href="#"><img src="./img/pawprint.png" alt="">Contactanos</a></li>
+                    <li><a href="#contactanos"><img src="./img/pawprint.png" alt="">Contactanos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="categorias">
             <div class="cont__right">
                 <h2>¡Es un placer atenderte aquí!</h2>
                 <p>¡Comederos en descuento!</p>
-                <a href="#">Comederos</a>
+                <a href="#">COMEDEROS</a>
             </div>
          </section>
-         <section class="productos">
+         <section class="productos" id="productos">
              <article class="cont__productos">
                  <img src="./img//pawprint2.png" alt="Patita">
                  <h1>Productos Destacados</h1>
@@ -73,6 +75,18 @@
                     <p class="precio__item">$150</p>
                 </div>
              </article>
+         </section>
+         <section class="contactanos" id="contactanos">
+            <h2>Contáctanos</h2>
+            <form class="form">
+                <input type="text" placeholder="Nombre y Apellido">
+                <input type="email" name="email" placeholder="Ingresa tu correo electróbico">
+                <input type="tel" name="tel" placeholder="Teléfono">
+                <div class="form__btn">
+                    <button class="gray">Resetear</button>
+                    <button class="orange">Enviar</button>
+                </div>
+            </form>
          </section>
     </main>
     <footer class="footer">

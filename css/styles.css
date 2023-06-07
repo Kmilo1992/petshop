@@ -9,6 +9,14 @@
     list-style: none;
 }
 
+.gray {
+    background-color: #8A8787;
+}
+
+.orange {
+    background-color: #F0A83E;
+}
+
 .container {
     display:flex;
 }
@@ -19,18 +27,18 @@
     font-size: 12px;
     color: white;
     justify-content: space-between;
-    flex-flow: row wrap;
     align-items: center;
     height: 25px;
 }
 
-.black__container .nav__list {
-    gap: 1em;
-    display: flex;
+.header .black__left{
+    padding-left: 7em;
 }
 
-.header .black__left{
-    padding-left: 4em;
+select {
+    background-color: black;
+    color: white;
+    border: none;
 }
 
 .header .black__right{
@@ -163,6 +171,58 @@
     font-size: 15px;
 }
 
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 40px;
+}
+
+.contactanos h2 {
+    font-size: ;
+}
+
+.contactanos .form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+.contactanos input {
+    width: 340px;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #3C2313;
+    color: white;
+    border: none;
+}
+
+.contactanos input::placeholder {
+    color: white;
+    font-size: 10px;
+}
+
+.contactanos .form .form__btn  {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contactanos .form .form__btn button  {
+    width: 110px;
+    padding: 7px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+
+
+
 /* Estilos Footer */
 
 .footer .subscribe {
@@ -174,6 +234,7 @@
     flex-wrap: wrap;
     padding: 10px 10px;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .footer .subscribe .left {
