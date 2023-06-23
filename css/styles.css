@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&family=Roboto:wght@100;300;400;500;600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +55,11 @@ select {
     align-items: center;
     margin: auto;
     flex-flow: row wrap;
+    position: relative;
+}
+
+.nav i, .nav input {
+    display: none;
 }
 
 .nav__bar .nav__list {
@@ -61,12 +67,23 @@ select {
     display: flex;
 }
 
+.nav__bar .nav__list li {
+    align-items: center;
+}
+
 .nav__bar .nav__list a {
     color: white;
+    font-size: 1.2em;
+}
+
+.nav__bar .nav__list a:hover {
+    color: #3C2313;
+    font-size: 1.2em;
 }
 
 .nav__bar .nav__list img {
     padding-right: 3px;
+    width: 20px;
 }
 
 /* Estilos Main */
@@ -315,3 +332,88 @@ select {
 .footer .black__container p {
     margin: auto;
 }
+
+@media (max-width: 750px) {
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .header .black__container {
+        display: none;
+    }
+
+    .nav .checkbox, .nav .bx-menu {
+        display: block;
+    }
+
+    .header .nav__list {
+        flex-direction: column;
+        width: 50%;
+        min-width: 260px;
+        position: absolute;
+        top: 62px;
+        right: -500px;
+        background-color: #F0A83E;
+        gap: 0px;
+        transition: 300ms;
+    }
+
+    .header .nav__list a {
+        font-size: 2em;
+        display: flex;
+        padding: 15px 12px;
+        align-items: center;
+    }
+
+    .header .nav__list img {
+        width: 32px;
+        padding-right: 5px;
+    }
+
+    .header .nav__list a:hover {
+        background-color: #3C2313;
+        color: white;
+        font-size: 2em;
+    }
+
+    .bxs-x-circle {
+        display: none;
+    }
+
+    .checkbox, .icons {
+        position: absolute;
+        top: 14px;
+        right: 29px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .icons {
+        pointer-events: none;
+        font-size: 40px;
+    }
+    
+    .checkbox {
+        opacity: 0;
+    }
+
+    .checkbox:checked ~ .bx-menu {
+        display: none;
+    }
+
+    .checkbox:checked ~ .bxs-x-circle {
+        display: block;
+    }
+
+    .checkbox:checked ~ .nav__list {
+        right: 0;
+    }
+
+    .footer .redes {
+        flex-direction: column-reverse;
+        gap: 20px;
+        min-width: 390px;
+    }
+  }
